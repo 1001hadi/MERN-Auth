@@ -20,7 +20,7 @@ function Login() {
       })
       .then((res) => {
         if (res.data.status) {
-          navigate("/home");
+          navigate("/");
         }
       })
       .catch((err) => {
@@ -48,6 +48,9 @@ function Login() {
         />
 
         <button type="submite">Login</button>
+        <p>
+          <Link to="/forgotPassword">Forgot Password</Link>
+        </p>
         <p>
           Not a user? <Link to="/signup"> Sign Up</Link>
         </p>
